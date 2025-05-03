@@ -1,0 +1,228 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 5 -M 3.0 -V 0.001 -S 42 -N 5
+Relation:     heart-weka.filters.unsupervised.attribute.NumericToNominal-R12
+Instances:    918
+Attributes:   12
+              Age
+              Sex
+              ChestPainType
+              RestingBP
+              Cholesterol
+              FastingBS
+              RestingECG
+              MaxHR
+              ExerciseAngina
+              Oldpeak
+              ST_Slope
+              HeartDisease
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+ST_Slope = Up
+|   Cholesterol < 42.5
+|   |   ChestPainType = ATA : 0 (1/0)
+|   |   ChestPainType = NAP
+|   |   |   MaxHR < 139.5 : 1 (1/0)
+|   |   |   MaxHR >= 139.5 : 0 (0/0)
+|   |   ChestPainType = ASY
+|   |   |   Oldpeak < 0.05
+|   |   |   |   FastingBS < 0.5 : 1 (1/0)
+|   |   |   |   FastingBS >= 0.5 : 0 (0/0)
+|   |   |   Oldpeak >= 0.05
+|   |   |   |   FastingBS < 0.5
+|   |   |   |   |   Age < 58.5 : 0 (0/0)
+|   |   |   |   |   Age >= 58.5 : 0 (2/0)
+|   |   |   |   FastingBS >= 0.5 : 1 (6/0)
+|   |   ChestPainType = TA : 0 (0/0)
+|   Cholesterol >= 42.5
+|   |   ChestPainType = ATA
+|   |   |   RestingECG = Normal
+|   |   |   |   Age < 56.5 : 0 (19/0)
+|   |   |   |   Age >= 56.5
+|   |   |   |   |   RestingBP < 127 : 0 (0/0)
+|   |   |   |   |   RestingBP >= 127 : 0 (3/0)
+|   |   |   RestingECG = ST : 0 (2/0)
+|   |   |   RestingECG = LVH
+|   |   |   |   RestingBP < 134 : 0 (1/0)
+|   |   |   |   RestingBP >= 134 : 0 (0/0)
+|   |   ChestPainType = NAP
+|   |   |   Oldpeak < 2.6
+|   |   |   |   RestingBP < 119
+|   |   |   |   |   RestingECG = Normal : 0 (3/1)
+|   |   |   |   |   RestingECG = ST : 0 (0/0)
+|   |   |   |   |   RestingECG = LVH : 0 (0/0)
+|   |   |   |   RestingBP >= 119
+|   |   |   |   |   Age < 63.5 : 0 (16/0)
+|   |   |   |   |   Age >= 63.5
+|   |   |   |   |   |   MaxHR < 157.5 : 0 (0/0)
+|   |   |   |   |   |   MaxHR >= 157.5 : 0 (1/0)
+|   |   |   Oldpeak >= 2.6 : 0 (0/0)
+|   |   ChestPainType = ASY
+|   |   |   Oldpeak < 0.5
+|   |   |   |   Age < 57.5
+|   |   |   |   |   MaxHR < 151.5 : 0 (5/1)
+|   |   |   |   |   MaxHR >= 151.5
+|   |   |   |   |   |   Sex = M
+|   |   |   |   |   |   |   Cholesterol < 202 : 0 (0/0)
+|   |   |   |   |   |   |   Cholesterol >= 202
+|   |   |   |   |   |   |   |   Age < 36 : 0 (0/0)
+|   |   |   |   |   |   |   |   Age >= 36
+|   |   |   |   |   |   |   |   |   Cholesterol < 222.5 : 0 (0/0)
+|   |   |   |   |   |   |   |   |   Cholesterol >= 222.5
+|   |   |   |   |   |   |   |   |   |   RestingBP < 113.5 : 0 (0/0)
+|   |   |   |   |   |   |   |   |   |   RestingBP >= 113.5
+|   |   |   |   |   |   |   |   |   |   |   Cholesterol < 257.5 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   Cholesterol >= 257.5 : 0 (0/0)
+|   |   |   |   |   |   Sex = F : 0 (0/0)
+|   |   |   |   Age >= 57.5
+|   |   |   |   |   MaxHR < 148 : 0 (5/1)
+|   |   |   |   |   MaxHR >= 148
+|   |   |   |   |   |   Cholesterol < 221.5 : 1 (1/0)
+|   |   |   |   |   |   Cholesterol >= 221.5 : 0 (3/1)
+|   |   |   Oldpeak >= 0.5
+|   |   |   |   RestingBP < 147
+|   |   |   |   |   Sex = M
+|   |   |   |   |   |   MaxHR < 159.5 : 1 (1/0)
+|   |   |   |   |   |   MaxHR >= 159.5 : 0 (0/0)
+|   |   |   |   |   Sex = F : 0 (2/0)
+|   |   |   |   RestingBP >= 147 : 0 (0/0)
+|   |   ChestPainType = TA
+|   |   |   Age < 58.5 : 0 (0/0)
+|   |   |   Age >= 58.5
+|   |   |   |   Age < 60.5 : 0 (1/0)
+|   |   |   |   Age >= 60.5 : 0 (2/1)
+ST_Slope = Flat
+|   ChestPainType = ATA
+|   |   Age < 59.5
+|   |   |   Cholesterol < 276
+|   |   |   |   Cholesterol < 174 : 1 (1/0)
+|   |   |   |   Cholesterol >= 174
+|   |   |   |   |   MaxHR < 167.5 : 1 (5/2)
+|   |   |   |   |   MaxHR >= 167.5 : 0 (1/0)
+|   |   |   Cholesterol >= 276
+|   |   |   |   MaxHR < 151.5 : 1 (1/0)
+|   |   |   |   MaxHR >= 151.5 : 0 (0/0)
+|   |   Age >= 59.5 : 0 (0/0)
+|   ChestPainType = NAP
+|   |   MaxHR < 135.5
+|   |   |   MaxHR < 117
+|   |   |   |   RestingECG = Normal : 0 (2/1)
+|   |   |   |   RestingECG = ST : 1 (2/0)
+|   |   |   |   RestingECG = LVH : 0 (0/0)
+|   |   |   MaxHR >= 117 : 1 (5/1)
+|   |   MaxHR >= 135.5
+|   |   |   Cholesterol < 203
+|   |   |   |   RestingECG = Normal
+|   |   |   |   |   Sex = M : 1 (2/0)
+|   |   |   |   |   Sex = F : 0 (0/0)
+|   |   |   |   RestingECG = ST : 0 (1/0)
+|   |   |   |   RestingECG = LVH : 0 (1/0)
+|   |   |   Cholesterol >= 203
+|   |   |   |   RestingBP < 131
+|   |   |   |   |   MaxHR < 142.5 : 1 (1/0)
+|   |   |   |   |   MaxHR >= 142.5
+|   |   |   |   |   |   MaxHR < 171.5
+|   |   |   |   |   |   |   Age < 52.5 : 0 (0/0)
+|   |   |   |   |   |   |   Age >= 52.5 : 1 (3/1)
+|   |   |   |   |   |   MaxHR >= 171.5 : 0 (1/0)
+|   |   |   |   RestingBP >= 131
+|   |   |   |   |   Age < 42.5 : 0 (0/0)
+|   |   |   |   |   Age >= 42.5
+|   |   |   |   |   |   MaxHR < 138.5 : 0 (0/0)
+|   |   |   |   |   |   MaxHR >= 138.5 : 0 (2/1)
+|   ChestPainType = ASY
+|   |   Sex = M
+|   |   |   Oldpeak < 0.15 : 1 (13/0)
+|   |   |   Oldpeak >= 0.15
+|   |   |   |   Oldpeak < 0.55 : 0 (0/0)
+|   |   |   |   Oldpeak >= 0.55
+|   |   |   |   |   MaxHR < 125.5 : 1 (22/2)
+|   |   |   |   |   MaxHR >= 125.5
+|   |   |   |   |   |   Age < 49.5
+|   |   |   |   |   |   |   Age < 40.5 : 1 (4/0)
+|   |   |   |   |   |   |   Age >= 40.5
+|   |   |   |   |   |   |   |   RestingBP < 125 : 1 (3/1)
+|   |   |   |   |   |   |   |   RestingBP >= 125
+|   |   |   |   |   |   |   |   |   Age < 42 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   Age >= 42 : 0 (0/0)
+|   |   |   |   |   |   Age >= 49.5
+|   |   |   |   |   |   |   RestingECG = Normal
+|   |   |   |   |   |   |   |   MaxHR < 152
+|   |   |   |   |   |   |   |   |   RestingBP < 115 : 0 (0/0)
+|   |   |   |   |   |   |   |   |   RestingBP >= 115 : 1 (3/0)
+|   |   |   |   |   |   |   |   MaxHR >= 152 : 0 (0/0)
+|   |   |   |   |   |   |   RestingECG = ST : 1 (3/0)
+|   |   |   |   |   |   |   RestingECG = LVH : 1 (7/0)
+|   |   Sex = F
+|   |   |   MaxHR < 109 : 0 (0/0)
+|   |   |   MaxHR >= 109
+|   |   |   |   RestingBP < 141
+|   |   |   |   |   MaxHR < 122.5 : 0 (1/0)
+|   |   |   |   |   MaxHR >= 122.5
+|   |   |   |   |   |   Oldpeak < 1.7
+|   |   |   |   |   |   |   Cholesterol < 238.5 : 0 (2/1)
+|   |   |   |   |   |   |   Cholesterol >= 238.5
+|   |   |   |   |   |   |   |   ExerciseAngina = N : 1 (1/0)
+|   |   |   |   |   |   |   |   ExerciseAngina = Y : 0 (1/0)
+|   |   |   |   |   |   Oldpeak >= 1.7 : 0 (0/0)
+|   |   |   |   RestingBP >= 141
+|   |   |   |   |   Oldpeak < 1.2 : 0 (0/0)
+|   |   |   |   |   Oldpeak >= 1.2 : 1 (2/0)
+|   ChestPainType = TA
+|   |   Cholesterol < 296.5
+|   |   |   RestingECG = Normal : 1 (2/0)
+|   |   |   RestingECG = ST : 1 (2/0)
+|   |   |   RestingECG = LVH
+|   |   |   |   MaxHR < 132.5 : 1 (1/0)
+|   |   |   |   MaxHR >= 132.5 : 0 (2/0)
+|   |   Cholesterol >= 296.5 : 0 (0/0)
+ST_Slope = Down
+|   MaxHR < 140.5
+|   |   ChestPainType = ATA : 0 (0/0)
+|   |   ChestPainType = NAP : 1 (1/0)
+|   |   ChestPainType = ASY
+|   |   |   ExerciseAngina = N : 0 (0/0)
+|   |   |   ExerciseAngina = Y : 1 (6/1)
+|   |   ChestPainType = TA : 0 (0/0)
+|   MaxHR >= 140.5
+|   |   ChestPainType = ATA : 0 (0/0)
+|   |   ChestPainType = NAP : 0 (1/0)
+|   |   ChestPainType = ASY
+|   |   |   FastingBS < 0.5 : 0 (0/0)
+|   |   |   FastingBS >= 0.5 : 1 (1/0)
+|   |   ChestPainType = TA : 0 (0/0)
+
+Size of the tree : 174
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         738               80.3922 %
+Incorrectly Classified Instances       180               19.6078 %
+Kappa statistic                          0.6043
+Mean absolute error                      0.2203
+Root mean squared error                  0.4085
+Relative absolute error                 44.5622 %
+Root relative squared error             82.163  %
+Total Number of Instances              918     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,793    0,187    0,774      0,793    0,783      0,604    0,818     0,745     0
+                 0,813    0,207    0,829      0,813    0,821      0,604    0,818     0,799     1
+Weighted Avg.    0,804    0,198    0,805      0,804    0,804      0,604    0,818     0,774     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 325  85 |   a = 0
+  95 413 |   b = 1
