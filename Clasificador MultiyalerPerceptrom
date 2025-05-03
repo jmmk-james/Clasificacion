@@ -1,0 +1,295 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     heart-weka.filters.unsupervised.attribute.NumericToNominal-R12
+Instances:    918
+Attributes:   12
+              Age
+              Sex
+              ChestPainType
+              RestingBP
+              Cholesterol
+              FastingBS
+              RestingECG
+              MaxHR
+              ExerciseAngina
+              Oldpeak
+              ST_Slope
+              HeartDisease
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.01047257356750936
+    Node 2    9.298923514106946
+    Node 3    -7.599574501953062
+    Node 4    -7.1663271383476586
+    Node 5    -7.423048731728344
+    Node 6    10.001311888759588
+    Node 7    12.816158341860861
+    Node 8    -5.928936966947534
+    Node 9    -8.271381613759756
+    Node 10    5.866583140443451
+    Node 11    7.949450897668561
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.010472502810465986
+    Node 2    -9.298938404491286
+    Node 3    7.599587036416778
+    Node 4    7.166337129520382
+    Node 5    7.423060973372634
+    Node 6    -10.001328672204313
+    Node 7    -12.816179431244459
+    Node 8    5.92894670595936
+    Node 9    8.271394435702003
+    Node 10    -5.866591548925369
+    Node 11    -7.949463707466728
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -4.1563732777246525
+    Attrib Age    -1.416691466113201
+    Attrib Sex=F    0.03221660379505419
+    Attrib ChestPainType=ATA    -1.1181926191502172
+    Attrib ChestPainType=NAP    5.573543762015491
+    Attrib ChestPainType=ASY    3.4252821512715017
+    Attrib ChestPainType=TA    0.3233645133515121
+    Attrib RestingBP    7.910111022749496
+    Attrib Cholesterol    6.871011291682242
+    Attrib FastingBS    1.6602268771721778
+    Attrib RestingECG=Normal    2.0101081425796794
+    Attrib RestingECG=ST    1.6209348410482227
+    Attrib RestingECG=LVH    0.48576896970768835
+    Attrib MaxHR    -2.8595001731231924
+    Attrib ExerciseAngina=Y    -1.54665599155945
+    Attrib Oldpeak    -0.9704768749699435
+    Attrib ST_Slope=Up    4.528163706480514
+    Attrib ST_Slope=Flat    -3.501348136931878
+    Attrib ST_Slope=Down    3.117621745969233
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -3.29748592276409
+    Attrib Age    17.15169435997741
+    Attrib Sex=F    5.026541718243968
+    Attrib ChestPainType=ATA    0.6374814208193194
+    Attrib ChestPainType=NAP    2.617919342282532
+    Attrib ChestPainType=ASY    2.6357996915490522
+    Attrib ChestPainType=TA    0.7852807925422745
+    Attrib RestingBP    3.9647648123197334
+    Attrib Cholesterol    6.87368591961261
+    Attrib FastingBS    -1.738468450415643
+    Attrib RestingECG=Normal    5.715896882835296
+    Attrib RestingECG=ST    1.2602237218177499
+    Attrib RestingECG=LVH    -3.6460626629393564
+    Attrib MaxHR    2.2940048651036804
+    Attrib ExerciseAngina=Y    1.4199300256856524
+    Attrib Oldpeak    3.3376707935238743
+    Attrib ST_Slope=Up    4.252384430097178
+    Attrib ST_Slope=Flat    -4.55023092423625
+    Attrib ST_Slope=Down    3.6105907315133536
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    1.1316628603669154
+    Attrib Age    -8.878678460712198
+    Attrib Sex=F    -0.23965894785637687
+    Attrib ChestPainType=ATA    -2.94567122793001
+    Attrib ChestPainType=NAP    0.8288858465453779
+    Attrib ChestPainType=ASY    -0.45827343309742796
+    Attrib ChestPainType=TA    0.19570284681993258
+    Attrib RestingBP    1.0326655879196693
+    Attrib Cholesterol    -4.1592007038370244
+    Attrib FastingBS    8.989885236649977
+    Attrib RestingECG=Normal    5.5804800232822025
+    Attrib RestingECG=ST    -1.2185186554751877
+    Attrib RestingECG=LVH    -5.53946829041412
+    Attrib MaxHR    -8.38438188929839
+    Attrib ExerciseAngina=Y    8.268469081144922
+    Attrib Oldpeak    -8.003123313761817
+    Attrib ST_Slope=Up    -5.572239523924275
+    Attrib ST_Slope=Flat    0.19092381441463396
+    Attrib ST_Slope=Down    4.29541028442841
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.3134448647233137
+    Attrib Age    -6.531359555669928
+    Attrib Sex=F    -2.0523695905975026
+    Attrib ChestPainType=ATA    1.3202645555291728
+    Attrib ChestPainType=NAP    1.5426080513422618
+    Attrib ChestPainType=ASY    1.2986191114555148
+    Attrib ChestPainType=TA    -3.5314815193018294
+    Attrib RestingBP    -12.13980039904389
+    Attrib Cholesterol    8.25526000364847
+    Attrib FastingBS    -1.6721136782777424
+    Attrib RestingECG=Normal    0.9310760150726382
+    Attrib RestingECG=ST    -1.8118559657841042
+    Attrib RestingECG=LVH    1.203032572272956
+    Attrib MaxHR    -7.468969734022945
+    Attrib ExerciseAngina=Y    -1.7274680029198728
+    Attrib Oldpeak    11.785832858829606
+    Attrib ST_Slope=Up    0.15681558673161697
+    Attrib ST_Slope=Flat    -1.8883740003959406
+    Attrib ST_Slope=Down    1.9351993887121013
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.07047188892154561
+    Attrib Age    -0.18511057348181217
+    Attrib Sex=F    2.691137441699028
+    Attrib ChestPainType=ATA    1.549459631899898
+    Attrib ChestPainType=NAP    -2.1966028258680868
+    Attrib ChestPainType=ASY    4.772685982726507
+    Attrib ChestPainType=TA    -4.0714776170325875
+    Attrib RestingBP    -10.505185680624907
+    Attrib Cholesterol    3.3449973135653543
+    Attrib FastingBS    -2.806341599863314
+    Attrib RestingECG=Normal    3.971493653407393
+    Attrib RestingECG=ST    2.347151663568965
+    Attrib RestingECG=LVH    -6.3090657082289345
+    Attrib MaxHR    -6.63650572760591
+    Attrib ExerciseAngina=Y    -3.0182818099660187
+    Attrib Oldpeak    2.3298516671683647
+    Attrib ST_Slope=Up    0.8064372822879381
+    Attrib ST_Slope=Flat    -0.8439397968721956
+    Attrib ST_Slope=Down    0.1289338365297677
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -2.559601584243133
+    Attrib Age    -10.069503541183328
+    Attrib Sex=F    -6.132752029125026
+    Attrib ChestPainType=ATA    2.7351989080919066
+    Attrib ChestPainType=NAP    4.858036669394266
+    Attrib ChestPainType=ASY    -7.791550591117862
+    Attrib ChestPainType=TA    5.241234726753968
+    Attrib RestingBP    -8.90583210908909
+    Attrib Cholesterol    7.3128373813737015
+    Attrib FastingBS    6.980981801021877
+    Attrib RestingECG=Normal    0.7110687697991818
+    Attrib RestingECG=ST    -2.658283018491337
+    Attrib RestingECG=LVH    4.487145195078778
+    Attrib MaxHR    5.986918720771392
+    Attrib ExerciseAngina=Y    3.749477988819545
+    Attrib Oldpeak    0.820898746046892
+    Attrib ST_Slope=Up    -0.25629135841199135
+    Attrib ST_Slope=Flat    0.05378555768989324
+    Attrib ST_Slope=Down    2.7212142455067863
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -1.3470451151709506
+    Attrib Age    13.149582059369365
+    Attrib Sex=F    -5.237649769419912
+    Attrib ChestPainType=ATA    0.653146587484985
+    Attrib ChestPainType=NAP    1.202089863676032
+    Attrib ChestPainType=ASY    3.945097283590653
+    Attrib ChestPainType=TA    -2.9567871656813467
+    Attrib RestingBP    -0.9414080289799179
+    Attrib Cholesterol    -4.229601817471087
+    Attrib FastingBS    1.705497065440238
+    Attrib RestingECG=Normal    4.261744425161132
+    Attrib RestingECG=ST    2.2633830109194895
+    Attrib RestingECG=LVH    -5.071280953484641
+    Attrib MaxHR    -1.51035077275343
+    Attrib ExerciseAngina=Y    5.569902348906161
+    Attrib Oldpeak    7.377824714297879
+    Attrib ST_Slope=Up    -0.9472505940959826
+    Attrib ST_Slope=Flat    8.391211912761868
+    Attrib ST_Slope=Down    -5.976290981856466
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -3.2987886135310953
+    Attrib Age    -8.025550280895152
+    Attrib Sex=F    -2.6253313539322622
+    Attrib ChestPainType=ATA    1.291711282444028
+    Attrib ChestPainType=NAP    -1.5480677985579643
+    Attrib ChestPainType=ASY    3.470484089632854
+    Attrib ChestPainType=TA    3.2948511154190907
+    Attrib RestingBP    -2.8082542975229914
+    Attrib Cholesterol    -11.15604011665409
+    Attrib FastingBS    3.2552897830652623
+    Attrib RestingECG=Normal    0.8876807092970538
+    Attrib RestingECG=ST    3.6176673304901525
+    Attrib RestingECG=LVH    -1.222702480560292
+    Attrib MaxHR    -8.097069441620677
+    Attrib ExerciseAngina=Y    1.971694663626257
+    Attrib Oldpeak    7.095874208059763
+    Attrib ST_Slope=Up    1.5819371346216589
+    Attrib ST_Slope=Flat    3.3502927459028626
+    Attrib ST_Slope=Down    -1.6741361900749205
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -1.9804328236033137
+    Attrib Age    -2.3258915946998315
+    Attrib Sex=F    6.723436612903991
+    Attrib ChestPainType=ATA    1.258195996116255
+    Attrib ChestPainType=NAP    4.35981317705394
+    Attrib ChestPainType=ASY    -1.7797987039053402
+    Attrib ChestPainType=TA    0.056870656529044425
+    Attrib RestingBP    -1.9764456140611093
+    Attrib Cholesterol    -0.880580536216865
+    Attrib FastingBS    -5.039290213723727
+    Attrib RestingECG=Normal    3.8828821458793286
+    Attrib RestingECG=ST    -0.5755566907717264
+    Attrib RestingECG=LVH    -1.3251264625856167
+    Attrib MaxHR    -5.229646634202901
+    Attrib ExerciseAngina=Y    2.344230902474217
+    Attrib Oldpeak    -8.442018574860441
+    Attrib ST_Slope=Up    1.4278557680968227
+    Attrib ST_Slope=Flat    1.4864860913991997
+    Attrib ST_Slope=Down    -1.0020664181884604
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -5.459359262628152
+    Attrib Age    5.832386219720505
+    Attrib Sex=F    0.3524320310623262
+    Attrib ChestPainType=ATA    4.820421212439604
+    Attrib ChestPainType=NAP    3.2072825175348374
+    Attrib ChestPainType=ASY    1.317481906328787
+    Attrib ChestPainType=TA    1.510264893702913
+    Attrib RestingBP    12.481113369223591
+    Attrib Cholesterol    0.27997347596111466
+    Attrib FastingBS    0.409582127522047
+    Attrib RestingECG=Normal    5.039892767884709
+    Attrib RestingECG=ST    3.0919222019615926
+    Attrib RestingECG=LVH    -2.7010249976011473
+    Attrib MaxHR    -5.043353018392873
+    Attrib ExerciseAngina=Y    1.4062493443150041
+    Attrib Oldpeak    -4.257759872189866
+    Attrib ST_Slope=Up    6.062546281957926
+    Attrib ST_Slope=Flat    -4.563040532749642
+    Attrib ST_Slope=Down    3.9481977201889484
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+Time taken to build model: 2.33 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         876               95.4248 %
+Incorrectly Classified Instances        42                4.5752 %
+Kappa statistic                          0.9073
+Mean absolute error                      0.0537
+Root mean squared error                  0.1899
+Relative absolute error                 10.8561 %
+Root relative squared error             38.2063 %
+Total Number of Instances              918     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,939    0,033    0,958      0,939    0,948      0,907    0,967     0,964     0
+                 0,967    0,061    0,952      0,967    0,959      0,907    0,967     0,957     1
+Weighted Avg.    0,954    0,049    0,954      0,954    0,954      0,907    0,967     0,960     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 385  25 |   a = 0
+  17 491 |   b = 1
